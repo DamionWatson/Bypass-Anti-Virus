@@ -139,6 +139,7 @@
             this.comboBox2.Size = new System.Drawing.Size(118, 21);
             this.comboBox2.TabIndex = 3;
             this.comboBox2.Text = "Install Path";
+            this.comboBox2.Visible = false;
             // 
             // tableLayoutPanel2
             // 
@@ -164,6 +165,7 @@
             this.textBox4.Size = new System.Drawing.Size(126, 20);
             this.textBox4.TabIndex = 0;
             this.textBox4.Text = "Encryption Key";
+            this.textBox4.Visible = false;
             // 
             // textBox5
             // 
@@ -172,6 +174,7 @@
             this.textBox5.Size = new System.Drawing.Size(126, 20);
             this.textBox5.TabIndex = 1;
             this.textBox5.Text = "Watchdog Name";
+            this.textBox5.Visible = false;
             // 
             // button3
             // 
@@ -181,6 +184,7 @@
             this.button3.TabIndex = 2;
             this.button3.Text = "Generate";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Visible = false;
             // 
             // button4
             // 
@@ -190,6 +194,7 @@
             this.button4.TabIndex = 3;
             this.button4.Text = "Random";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Visible = false;
             // 
             // checkedListBox1
             // 
@@ -204,6 +209,7 @@
             this.checkedListBox1.Name = "checkedListBox1";
             this.checkedListBox1.Size = new System.Drawing.Size(119, 79);
             this.checkedListBox1.TabIndex = 1;
+            this.checkedListBox1.SelectedIndexChanged += new System.EventHandler(this.checkedListBox1_SelectedIndexChanged);
             // 
             // tableLayoutPanel1
             // 
@@ -321,20 +327,23 @@
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.saveToolStripMenuItem.Text = "Save";
+            this.saveToolStripMenuItem.Click += new System.EventHandler(this.saveToolStripMenuItem_Click);
             // 
             // openToolStripMenuItem
             // 
             this.openToolStripMenuItem.Name = "openToolStripMenuItem";
-            this.openToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.openToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.openToolStripMenuItem.Text = "Open";
+            this.openToolStripMenuItem.Click += new System.EventHandler(this.openToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem
             // 
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(103, 22);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.exitToolStripMenuItem.Text = "Exit";
+            this.exitToolStripMenuItem.Click += new System.EventHandler(this.exitToolStripMenuItem_Click);
             // 
             // toolStripSeparator1
             // 

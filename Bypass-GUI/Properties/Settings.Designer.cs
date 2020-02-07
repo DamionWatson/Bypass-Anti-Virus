@@ -40,12 +40,120 @@ namespace Bypass_GUI.Properties {
   <string>taskmanager.exe</string>
   <string>iexplorer.exe</string>
 </ArrayOfString>")]
-        public global::System.Collections.Specialized.StringCollection injProgram {
+        public global::System.Collections.Specialized.StringCollection injList {
             get {
-                return ((global::System.Collections.Specialized.StringCollection)(this["injProgram"]));
+                return ((global::System.Collections.Specialized.StringCollection)(this["injList"]));
             }
             set {
-                this["injProgram"] = value;
+                this["injList"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool install {
+            get {
+                return ((bool)(this["install"]));
+            }
+            set {
+                this["install"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool encrypt {
+            get {
+                return ((bool)(this["encrypt"]));
+            }
+            set {
+                this["encrypt"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool melt {
+            get {
+                return ((bool)(this["melt"]));
+            }
+            set {
+                this["melt"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool startup {
+            get {
+                return ((bool)(this["startup"]));
+            }
+            set {
+                this["startup"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("False")]
+        public bool watchdog {
+            get {
+                return ((bool)(this["watchdog"]));
+            }
+            set {
+                this["watchdog"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("null")]
+        public string encryptionKey {
+            get {
+                return ((string)(this["encryptionKey"]));
+            }
+            set {
+                this["encryptionKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("null")]
+        public string injAssembly {
+            get {
+                return ((string)(this["injAssembly"]));
+            }
+            set {
+                this["injAssembly"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("null")]
+        public string watchdogKey {
+            get {
+                return ((string)(this["watchdogKey"]));
+            }
+            set {
+                this["watchdogKey"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public int method {
+            get {
+                return ((int)(this["method"]));
+            }
+            set {
+                this["method"] = value;
             }
         }
     }

