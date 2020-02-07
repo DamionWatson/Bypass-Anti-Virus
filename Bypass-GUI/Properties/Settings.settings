@@ -5,14 +5,13 @@
     <Setting Name="GUID" Type="System.Guid" Scope="Application">
       <Value Profile="(Default)">355bbe65-a74b-4ee8-b027-e91e72fc286f</Value>
     </Setting>
-    <Setting Name="stringsList" Type="System.Collections.Specialized.StringCollection" Scope="Application">
+    <Setting Name="injProgram" Type="System.Collections.Specialized.StringCollection" Scope="User">
       <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
 &lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
-  &lt;string&gt;Test&lt;/string&gt;
+  &lt;string&gt;cmd.exe&lt;/string&gt;
+  &lt;string&gt;taskmanager.exe&lt;/string&gt;
+  &lt;string&gt;iexplorer.exe&lt;/string&gt;
 &lt;/ArrayOfString&gt;</Value>
-    </Setting>
-    <Setting Name="yesNo" Type="System.Boolean" Scope="User">
-      <Value Profile="(Default)">False</Value>
     </Setting>
   </Settings>
 </SettingsFile>
